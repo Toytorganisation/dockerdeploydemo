@@ -73,6 +73,4 @@ jobs:
             manifests/service.yml
           images: |
             ${{ env.IMAGE_NAME }}
-          imagepullsecrets: |
-            ${{ secrets.AKS_SECRET }}
           #namespace: ${{ env.NAMESPACE }}
