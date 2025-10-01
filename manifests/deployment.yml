@@ -28,5 +28,3 @@ spec:
               value: http://+:80
             - name: WebApiBaseAddress
               value: http://webapi
-      imagePullSecrets:
-        - name: aks-secret
