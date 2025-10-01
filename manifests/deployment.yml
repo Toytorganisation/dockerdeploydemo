@@ -1,10 +1,10 @@
-﻿apiVersion: apps/v1
- 
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: webapp
   labels:
     app: sample-app
+    service: webapp
 spec:
   replicas: 1
   selector:
@@ -28,3 +28,5 @@ spec:
               value: http://+:80
             - name: WebApiBaseAddress
               value: http://webapi
+      imagePullSecrets:
+        - name: aks-secret
